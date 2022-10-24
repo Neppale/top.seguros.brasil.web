@@ -1,23 +1,22 @@
-html {
-  font-size: 14px;
-}
-
-title {
-    font-family: 'Poppins', sans-serif;
-    color: #F45446;
+* {
+    font-size: 14px;
+    background-color: #FAFAFA;
 }
 
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+
   }
 }
-
-html {
-  position: relative;
-  min-height: 100%;
+.navbar-brand {
+    color: #F45446 !important;
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+    margin-left: 50px;
 }
 
-body {
-  margin-bottom: 60px;
+.login {
+    margin-left: 1000px;
+    color: #848484 !important;
 }

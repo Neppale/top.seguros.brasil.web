@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Pages",
-    "\\Pages\\Login",
-    "\\Pages\\Shared"
+    "\\Views",
+    "\\Views\\Shared"
   ],
+  "SelectedNode": "\\TopSegurosBrasilWeb.csproj",
   "PreviewInSolutionExplorer": false
 }

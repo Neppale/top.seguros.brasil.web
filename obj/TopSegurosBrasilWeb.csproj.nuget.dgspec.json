@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\TopSegurosBrasilWeb\\TopSegurosBrasilWeb\\TopSegurosBrasilWeb.csproj": {}
+    "C:\\Users\\Admin\\Documents\\top.seguros.brasil.web\\TopSegurosBrasilWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\TopSegurosBrasilWeb\\TopSegurosBrasilWeb\\TopSegurosBrasilWeb.csproj": {
+    "C:\\Users\\Admin\\Documents\\top.seguros.brasil.web\\TopSegurosBrasilWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\TopSegurosBrasilWeb\\TopSegurosBrasilWeb\\TopSegurosBrasilWeb.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\top.seguros.brasil.web\\TopSegurosBrasilWeb.csproj",
         "projectName": "TopSegurosBrasilWeb",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\TopSegurosBrasilWeb\\TopSegurosBrasilWeb\\TopSegurosBrasilWeb.csproj",
+        "projectPath": "C:\\Users\\Admin\\Documents\\top.seguros.brasil.web\\TopSegurosBrasilWeb.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\TopSegurosBrasilWeb\\TopSegurosBrasilWeb\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\top.seguros.brasil.web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
