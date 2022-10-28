@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Views",
-    "\\Views\\Shared"
+    "\\Views\\Home"
   ],
-  "SelectedNode": "\\TopSegurosBrasilWeb.csproj",
+  "SelectedNode": "\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
