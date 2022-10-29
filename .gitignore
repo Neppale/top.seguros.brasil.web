@@ -1,0 +1,7 @@
+# vscode and visual studio files
+.vscode
+.vs
+
+# debug stuff
+[Oo]bj
+[Bb]in
