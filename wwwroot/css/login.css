@@ -33,4 +33,9 @@ div {
     margin-bottom: 50px;
 }
 
+.cadastro-link{
+    display: flex;
+    justify-content:flex-end;
+    
+}
 
