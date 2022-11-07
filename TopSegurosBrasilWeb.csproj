@@ -18,6 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Home\CadastroVII.cshtml" />
+    <Content Remove="Views\Home\CadastroVIII.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\img\34. newsletter-2.png" />
   </ItemGroup>
 

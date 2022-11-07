@@ -17,18 +17,27 @@
 
         <div class="input-group input-group-lg size">
         </div>
-        <div class="input-group input-group-lg size">
-            <input type="text" class="form-control inp" placeholder="CPF" aria-label="CPF" aria-describedby="basic-addon1">
+
+        <div class="icon_login size">
+            <img src="~/img/34. newsletter-2.png" alt="icone" class="icone" />
         </div>
 
         <div class="input-group input-group-lg size">
-            <input type="text" class="form-control inp" placeholder="CNH" aria-label="CNH" aria-describedby="basic-addon1">
+            <input type="text" class="form-control inp" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group input-group-lg size">
+            <input type="text" class="form-control inp" placeholder="Senha" aria-label="Password" aria-describedby="basic-addon1">
         </div>
 
         <div class="size">
 
-            <a class="cadastroII" asp-area="" asp-controller="" asp-action=""><button type="button" class="btn input-group input-group-lg">Continuar</button></a>
-      
+            @*
+            <a class="cadastro-link" asp-area="" asp-controller="Home" asp-action="Cadastro"><button type="button" class="btn input-group input-group-lg">ENTRAR</button></a>
+            *@
+
+            <a class="cadastro-link" asp-area="" asp-controller="Home" asp-action="Cadastro"><button type="button" class="btn input-group input-group-lg">ENTRAR</button></a>
+
         </div>
 
     </div>
