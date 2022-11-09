@@ -28,11 +28,11 @@
          </div>
 
         <div class="input-group input-group-lg size">
-            <input type="text" class="form-control inp" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+            <input type="text" class="form-control inp" id="email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
           </div>
 
         <div class="input-group input-group-lg size">
-            <input type="text" class="form-control inp" placeholder="Senha" aria-label="Password" aria-describedby="basic-addon1">
+            <input type="password" class="form-control inp" id="senha" placeholder="Senha" aria-label="Password" aria-describedby="basic-addon1">
        </div>
 
         <div class="size">
@@ -44,9 +44,11 @@
                        runat="server"> teste <asp:HyperLink/>
 
 
-            <button type="button" class="btn input-group input-group-lg">ENTRAR</button>
+            <button type="button" onclick="login()" class="btn input-group input-group-lg">ENTRAR</button>
          </div>
 
        </div>
 
+    <script src="js/Validando.js" asp-append-version="true"></script>
+       
   </body>
