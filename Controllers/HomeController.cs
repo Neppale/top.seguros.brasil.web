@@ -13,19 +13,43 @@ namespace TopSegurosBrasilWeb.Controllers
             _logger = logger;
         }
 
-        public IActionResult Contact()
-        {
-            return View();
-        }
-
-        public IActionResult About()
-        {
-            return View();
-        }
         public IActionResult Index()
         {
             return View();
         }
+
+        public IActionResult Cadastro()
+        {
+            return View();
+        }
+        public IActionResult CadastroII()
+        {
+            return View();
+        }
+
+        public IActionResult CadastroIII()
+        {
+            return View();
+        }
+
+        public IActionResult CadastroIV()
+        {
+            return View();
+        }
+
+        public IActionResult CadastroV()
+        {
+            return View();
+        }
+
+        public IActionResult CadastroVI()
+        {
+            return View();
+        }
+
+   
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -6,26 +6,11 @@
     <title>@ViewData["Title"] - TopSegurosBrasilWeb</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
-   
     <link rel="stylesheet" href="~/TopSegurosBrasilWeb.styles.css" asp-append-version="true" />
-
-
   </head>
   <body>
 
-
-        
-
         <div class="container">
-
-
-        <div class="input-group input-group-lg size">
-
-        </div>
-
-        <div class="icon_login size">
-            <img src="~/img/34. newsletter-2.png" alt="icone" class="icone" />
-         </div>
 
         <div class="input-group input-group-lg size">
             <input type="text" class="form-control inp" id="email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
@@ -37,15 +22,18 @@
 
         <div class="size">
 
-        <asp:HyperLink id="hyperlink1"
-                       NavigateUrl="http://www.microsoft.com"
-                       Text="teste"
-                       Target="_new"
-                       runat="server"> teste <asp:HyperLink/>
+            @* 
+            <a class="cadastro-link" asp-area="" asp-controller="Home" asp-action="Cadastro"><button type="button" class="btn input-group input-group-lg">ENTRAR</button></a> 
+            *@
 
+            <a class="cadastro-link" asp-area="" asp-controller="Home" asp-action="Cadastro"><button type="button" class="btn input-group input-group-lg">ENTRAR</button></a>
 
+<<<<<<< HEAD
             <button type="button" onclick="login()" class="btn input-group input-group-lg">ENTRAR</button>
          </div>
+=======
+        </div>
+>>>>>>> b29bdb141dca5d07763519795151c899082907a0
 
        </div>
 
