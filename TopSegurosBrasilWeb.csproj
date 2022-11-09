@@ -20,6 +20,7 @@
   <ItemGroup>
     <Content Remove="Views\Home\CadastroVII.cshtml" />
     <Content Remove="Views\Home\CadastroVIII.cshtml" />
+    <Content Remove="wwwroot\css\cardCadastro.cs" />
   </ItemGroup>
 
   <ItemGroup>
