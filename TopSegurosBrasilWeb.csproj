@@ -14,20 +14,17 @@
   </ItemGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
     <Content Remove="Views\Cadastro\Index.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="Views\Cadastro\Index.cshtml" />
-=======
     <Content Remove="Views\Home\CadastroVII.cshtml" />
     <Content Remove="Views\Home\CadastroVIII.cshtml" />
     <Content Remove="wwwroot\css\cardCadastro.cs" />
   </ItemGroup>
 
   <ItemGroup>
->>>>>>> b29bdb141dca5d07763519795151c899082907a0
     <None Include="wwwroot\img\34. newsletter-2.png" />
   </ItemGroup>
 
