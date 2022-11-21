@@ -1,0 +1,42 @@
+﻿* {
+    background-color: #FAFAFA !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 331px;
+}
+
+.btn {
+    background-color: #F45446 !important;
+    height: 56px;
+    color:#FAFAFA;
+}
+
+.icon_login {
+    align-items: center;
+    margin:0 20px 10px 20px;
+}
+
+div {
+    margin: 0 0 20px 0;
+}
+
+.input-group {
+    border-radius: 3.5px
+}
+
+.login{
+    margin-left: 500px;
+    margin-bottom: 50px;
+}
+
+
+.cadastro-link{
+    display: flex;
+    justify-content:flex-end;
+    
+}
+

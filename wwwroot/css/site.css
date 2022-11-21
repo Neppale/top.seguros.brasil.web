@@ -1,0 +1,26 @@
+* {
+    font-size: 14px;
+    background-color: #FAFAFA;
+}
+
+@media (min-width: 768px) {
+  html {
+
+  }
+}
+.navbar-brand {
+    color: #F45446 !important;
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+.login {
+    margin-left: 1000px;
+    color: #848484 !important;
+}
+
+
+
+

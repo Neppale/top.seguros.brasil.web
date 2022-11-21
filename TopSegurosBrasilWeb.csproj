@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\NovaPasta1\**" />
+    <Content Remove="Views\NovaPasta1\**" />
+    <EmbeddedResource Remove="Views\NovaPasta1\**" />
+    <None Remove="Views\NovaPasta1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Cadastro\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Cadastro\Index.cshtml" />
+    <Content Remove="Views\Home\CadastroVII.cshtml" />
+    <Content Remove="Views\Home\CadastroVIII.cshtml" />
+    <Content Remove="wwwroot\css\cardCadastro.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img\34. newsletter-2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Cadastro\" />
+    <Folder Include="Views\NovaPasta2\" />
+  </ItemGroup>
+
+</Project>
