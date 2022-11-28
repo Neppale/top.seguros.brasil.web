@@ -7,5 +7,6 @@
     localStorage.setItem("Senha", Senha);
     localStorage.setItem("confimeSenha", confirmeSenha)
 
+
     updateLocalStorage();
 }
