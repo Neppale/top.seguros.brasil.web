@@ -15,17 +15,18 @@
     <div class="container">
 
         <div class="input-group input-group-lg size">
-            <input type="text" class="form-control inp" placeholder="Uso" aria-label="Uso" aria-describedby="basic-addon1">
+            <input type="text" class="form-control inp" id="Uso" placeholder="Uso" aria-label="Uso" aria-describedby="basic-addon1">
         </div>
 
         <div class="input-group input-group-lg size">
-            <input type="text" class="form-control inp" placeholder="Placa" aria-label="Placa" aria-describedby="basic-addon1">
+            <input type="text" class="form-control inp" id="Placa" placeholder="Placa" aria-label="Placa" aria-describedby="basic-addon1">
         </div>
 
         <div class="size">
-            <a class="cadastro-link" asp-area="" asp-controller="" asp-action=""><button type="button" class="btn input-group input-group-lg">ENTRAR</button></a>
+            <a class="cadastro-link" asp-area="" asp-controller="Home" asp-action="CadastroVI"><button type="button" onclick="pagina5()" class="btn input-group input-group-lg">ENTRAR</button></a>
         </div>
 
     </div>
+   <script src="~/js/Cadastro5.js" asp-append-version="true"></script> 
 
 </body>
