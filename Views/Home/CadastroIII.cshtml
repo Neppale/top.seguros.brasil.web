@@ -13,21 +13,22 @@
     <div class="container">
 
         <div class="input-group input-group-lg size">
-            <input type="text" class="form-control inp" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+            <input type="text" class="form-control inp" id="Email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
         </div>
 
         <div class="input-group input-group-lg size">
-            <input type="text" class="form-control inp" placeholder="Senha" aria-label="Password" aria-describedby="basic-addon1">
+            <input type="password" class="form-control inp" id="Senha" placeholder="Senha" aria-label="Password" aria-describedby="basic-addon1">
         </div>
 
         <div class="input-group input-group-lg size">
-            <input type="text" class="form-control inp" placeholder="Confirme a senha" aria-label="Password" aria-describedby="basic-addon1">
+            <input type="password" class="form-control inp" id="confirmeSenha" placeholder="Confirme a senha" aria-label="Password" aria-describedby="basic-addon1">
         </div>
 
         <div class="size">
-            <a class="cadastro-link" asp-area="" asp-controller="Home" asp-action="CadastroIV"><button type="button" class="btn input-group input-group-lg">ENTRAR</button></a>
+            <a class="cadastro-link" asp-area="" asp-controller="Home" asp-action="CadastroIV"><button type="button" onclick="pagina3()" class="btn input-group input-group-lg">ENTRAR</button></a>
         </div>
 
     </div>
+    <script src="~/js/Cadastro3.js" asp-append-version="true"></script>
 
 </body>
