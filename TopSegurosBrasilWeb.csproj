@@ -25,6 +25,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Views\Home\CadastroCobertura.html" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\img\34. newsletter-2.png" />
   </ItemGroup>
 

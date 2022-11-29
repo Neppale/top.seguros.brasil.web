@@ -1,4 +1,55 @@
-﻿
-.card_cadastro{
-    height: 100px;
+﻿.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icone{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+img{
+    width: 28px;
+    height: 28px;
+}
+
+.card_cadastro {
+    width: 350px;
+    margin-bottom: 14px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.card-title {
+    color: #003563;
+}
+
+.card-text-price {
+    color: #DB4639;
+}
+
+.form-check {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.row {
+    flex-direction: row !important;
+}
+
+.preco {
+    color: #F45446;
+}
+
+.btn {
+    background-color: #F45446 !important;
+    height: 56px;
+    color: #FAFAFA;
+}
+
+.select-radio{
+    display: flex;
+    flex-direction: row-reverse;
 }
