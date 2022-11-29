@@ -7,3 +7,4 @@ namespace TopSegurosBrasilWeb.Models
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
     }
 }
+  
