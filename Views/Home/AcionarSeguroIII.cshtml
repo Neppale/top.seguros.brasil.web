@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TopSegurosBrasilWeb</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TopSegurosBrasilWeb.styles.css" asp-append-version="true" />
+
+
+</head>
+<body onload="getMarcas()">
+
+    <div class="container">
+
+        <div class="input-group mb-3">
+            <select class="form-select" id="inputGroupSelect01" onclick="getModelo()">
+                <option selected id="marca">Estado da ocorrência</option>
+            </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <select class="form-select" id="inputGroupSelect02">
+                <option selected id="modelo">Municipio</option>
+            </select>
+        </div>
+
+        <div class="size">
+            <a class="cadastro-link" asp-area="" asp-controller="Home" asp-action="AcionarSeguroIV"><button type="button" class="btn input-group input-group-lg">CONTINUAR</button></a>
+        </div>
+
+    </div>
+    <script src="~/js/Cadastro4.js" asp-append-version="true"></script>
+
+</body>
