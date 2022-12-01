@@ -46,9 +46,40 @@ namespace TopSegurosBrasilWeb.Controllers
         {
             return View();
         }
+        public IActionResult CadastroCobertura()
+        {
+            return View();
+        }
 
-   
+        public IActionResult AcionarSeguroI()
+        {
+            return View();
+        }
 
+        public IActionResult AcionarSeguroII()
+        {
+            return View();
+        }
+
+        public IActionResult AcionarSeguroIII()
+        {
+            return View();
+        }
+
+        public IActionResult AcionarSeguroIV()
+        {
+            return View();
+        }
+
+        public IActionResult AcionarSeguroV()
+        {
+            return View();
+        }
+
+        public IActionResult AcionarSeguroVI()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
