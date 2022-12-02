@@ -8,8 +8,9 @@ placa.addEventListener("keypress", () => {
 async function pagina5() {
   var uso = document.getElementById("Uso").value;
   var placa = document.getElementById("Placa").value;
+  const renavam = document.getElementById("Renavam").value;
 
-  if (uso == "" || placa == "") {
+  if (uso == "" || placa == "" || renavam == "") {
     alert("É necessário preencher todos os campos antes de continuar.");
     return false;
   }
@@ -20,8 +21,15 @@ async function pagina5() {
     return false;
   }
 
+  const regexRenavam = "[0-9]{11}$";
+  if (!renavam.match(regexRenavam)) {
+    alert("Renavam fora do padrão. Ex: 12345678901");
+    return false;
+  }
+
   localStorage.setItem("uso", uso);
   localStorage.setItem("placa", placa);
+  localStorage.setItem("renavam", renavam);
 
   const cadastro = await cadastrarVeiculoAPI();
   if (cadastro) {
@@ -41,7 +49,7 @@ async function cadastrarVeiculoAPI() {
     marca: localStorage.getItem("marca"),
     modelo: localStorage.getItem("modelo"),
     ano: localStorage.getItem("ano"),
-    renavam: localStorage.getItem("renavam") || "05675041229",
+    renavam: localStorage.getItem("renavam"),
     placa: localStorage.getItem("placa"),
     uso: localStorage.getItem("uso"),
     id_cliente: localStorage.getItem("id_cliente"),
