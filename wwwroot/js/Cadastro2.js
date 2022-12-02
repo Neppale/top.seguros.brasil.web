@@ -9,6 +9,15 @@ cpfMascara.addEventListener("keypress", () => {
   }
 });
 
+const cepMascara = document.getElementById("cep");
+cepMascara.addEventListener("keypress", () => {
+  let cepLength = cepMascara.value.length;
+
+  if (cepLength == 5) {
+    cepMascara.value += "-";
+  }
+});
+
 async function pagina2() {
   const cpf = document.getElementById("cpf").value;
   const cnh = document.getElementById("cnh").value;
@@ -31,12 +40,7 @@ async function pagina2() {
   }
 
   const cepRegex = /^\d{5}\-\d{3}$/;
-  if (!cepRegex.test(cep)) {
-    alert("CEP inválido.");
-    return false;
-  }
-
-  if (cep.length != 9) {
+  if (!cepRegex.test(cep) || cep.length != 9) {
     alert("O CEP deve estar no formato 'xxxxx-xxx'.");
     return false;
   }
