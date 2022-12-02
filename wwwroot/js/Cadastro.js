@@ -29,6 +29,16 @@ async function cadastraCliente() {
     return false;
   }
 
+  if (dataNascimento.substring(0, 2) > 31) {
+    alert("O dia deve ser menor que 31.");
+    return false;
+  }
+
+  if (dataNascimento.substring(3, 5) > 12) {
+    alert("O mês deve ser menor que 12.");
+    return false;
+  }
+
   localStorage.setItem("nome", nomeCompleto);
   localStorage.setItem("dataNascimento", dataNascimento);
 
