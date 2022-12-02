@@ -49,14 +49,14 @@ async function cadastrarClienteAPI() {
     senha: localStorage.getItem("senha"),
     cpf: localStorage.getItem("cpf"),
     cnh: localStorage.getItem("cnh"),
-    cep: localStorage.getItem("cep") || "01310-100",
+    cep: localStorage.getItem("cep"),
     data_nascimento: localStorage
       .getItem("dataNascimento")
       .split("/")
       .reverse()
       .join("-"),
-    telefone1: localStorage.getItem("telefone") || "(00) 00000-0000",
-    telefone2: localStorage.getItem("telefone2") || "(00) 00000-0000",
+    telefone1: localStorage.getItem("telefone1"),
+    telefone2: localStorage.getItem("telefone2"),
   };
 
   const options = {

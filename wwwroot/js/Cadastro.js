@@ -12,8 +12,10 @@ async function cadastraCliente() {
 
   var nomeCompleto = document.getElementById("nomeCompleto").value;
   var dataNascimento = document.getElementById("dataNascimento").value;
+  var telefone1 = document.getElementById("telefone1").value;
+  var telefone2 = document.getElementById("telefone2").value;
 
-  if (nomeCompleto == "" || dataNascimento == "") {
+  if (nomeCompleto == "" || dataNascimento == "" || telefone1 == "") {
     alert("É necessário preencher todos os campos antes de continuar.");
     return false;
   }
@@ -39,8 +41,20 @@ async function cadastraCliente() {
     return false;
   }
 
+  if (telefone1.length != 15) {
+    alert("O telefone deve estar no formato (xx) xxxxx-xxxx.");
+    return false;
+  }
+
+  if (telefone2.length != 15 && telefone2.length != 0) {
+    alert("O telefone 2 deve estar no formato (xx) xxxxx-xxxx.");
+    return false;
+  }
+
   localStorage.setItem("nome", nomeCompleto);
   localStorage.setItem("dataNascimento", dataNascimento);
+  localStorage.setItem("telefone1", telefone1);
+  localStorage.setItem("telefone2", telefone2 || "");
 
   window.location.href = "CadastroII";
 }

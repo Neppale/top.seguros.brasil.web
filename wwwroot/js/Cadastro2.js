@@ -10,10 +10,11 @@ cpfMascara.addEventListener("keypress", () => {
 });
 
 async function pagina2() {
-  var cpf = document.getElementById("cpf").value;
-  var cnh = document.getElementById("cnh").value;
+  const cpf = document.getElementById("cpf").value;
+  const cnh = document.getElementById("cnh").value;
+  const cep = document.getElementById("cep").value;
 
-  if (cpf == "" || cnh == "") {
+  if (cpf == "" || cnh == "" || cep == "") {
     alert("É necessário preencher todos os campos antes de continuar.");
     return false;
   }
@@ -29,6 +30,23 @@ async function pagina2() {
     return false;
   }
 
+  const cepRegex = /^\d{5}\-\d{3}$/;
+  if (!cepRegex.test(cep)) {
+    alert("CEP inválido.");
+    return false;
+  }
+
+  if (cep.length != 9) {
+    alert("O CEP deve estar no formato 'xxxxx-xxx'.");
+    return false;
+  }
+
+  const cnhRegex = /^\d{11}$/;
+  if (!cnhRegex.test(cnh)) {
+    alert("CNH inválida.");
+    return false;
+  }
+
   if (cnh.length != 11) {
     alert("A CNH deve ter 11 dígitos.");
     return false;
@@ -36,6 +54,7 @@ async function pagina2() {
 
   localStorage.setItem("cpf", cpf);
   localStorage.setItem("cnh", cnh);
+  localStorage.setItem("cep", cep);
 
   window.location.href = "CadastroIII";
 }
