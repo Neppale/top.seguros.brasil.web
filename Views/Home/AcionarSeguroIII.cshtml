@@ -15,25 +15,19 @@
     <div class="container">
 
         <div class="input-group mb-3">
-            <select class="form-select" id="inputGroupSelect01">
-                <option selected id="marca">Marcas</option>
+            <select class="form-select" id="inputGroupSelect01" onclick="getModelo()">
+                <option selected id="marca">Estado da ocorrência</option>
             </select>
         </div>
 
         <div class="input-group mb-3">
             <select class="form-select" id="inputGroupSelect02">
-                <option selected id="modelo">Modelo</option>
-            </select>
-        </div>
-
-        <div class="input-group mb-3">
-            <select class="form-select" id="inputGroupSelect03">
-                <option selected id="ano">Ano</option>
+                <option selected id="modelo">Municipio</option>
             </select>
         </div>
 
         <div class="size">
-            <a class="cadastro-link"><button type="button" onclick="pagina4()" class="btn input-group input-group-lg">CONTINUAR</button></a>
+            <a class="cadastro-link" asp-area="" asp-controller="Home" asp-action="AcionarSeguroIV"><button type="button" class="btn input-group input-group-lg">CONTINUAR</button></a>
         </div>
 
     </div>

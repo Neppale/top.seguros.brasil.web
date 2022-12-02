@@ -18,11 +18,23 @@
         </div>
 
         <div class="input-group input-group-lg size">
+
             <input type="text" class="form-control inp" id="dataNascimento" placeholder="YYYY/MM/DD" maxlength="10" autocapitalize="off" aria-label="DataNascimento" aria-describedby="basic-addon1" onclick="formatarData()">
+
+            <input type="text" class="form-control inp" id="dataNascimento" placeholder="Data de nascimento" maxlength="10" autocapitalize="off" aria-label="DataNascimento" aria-describedby="basic-addon1">
+        </div>
+
+         <div class="input-group input-group-lg size">
+            <input type="text" class="form-control inp" id="telefone1" placeholder="Telefone" maxlength="15" autocapitalize="off" aria-label="telefone1" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group input-group-lg size">
+            <input type="text" class="form-control inp" id="telefone2" placeholder="Telefone 2 (opcional)" maxlength="15" autocapitalize="off" aria-label="telefone2" aria-describedby="basic-addon1">
+
         </div>
 
         <div class="size">
-            <a class="cadastro-link" asp-area="" asp-controller="Home" asp-action="CadastroII"> <button type="button" onclick="cadastraCliente()" class="btn input-group input-group-lg">Continuar</button> </a>
+            <a class="cadastro-link"> <button type="button" onclick="cadastraCliente()" class="btn input-group input-group-lg" href="/Home/CadastroII">Continuar</button> </a>
         </div>
 
     </div>
