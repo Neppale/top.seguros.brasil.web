@@ -1,9 +1,7 @@
-async function pagina5(){
-    var uso = document.getElementById("Uso").value;
-    var placa = document.getElementById("Placa").value;
+async function pagina5() {
+  var uso = document.getElementById("Uso").value;
+  var placa = document.getElementById("Placa").value;
 
-    localStorage.setItem("Uso", uso);
-    localStorage.setItem("Placa", placa);
-
-    updateLocalStorage();
+  localStorage.setItem("Uso", uso);
+  localStorage.setItem("Placa", placa);
 }
