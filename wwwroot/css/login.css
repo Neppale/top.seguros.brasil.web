@@ -37,6 +37,10 @@ div {
 .cadastro-link{
     display: flex;
     justify-content:flex-end;
-    
 }
 
+.gss{
+    background-color: #FAFAFA !important;
+    color: #F45446;
+    height: 56px;
+}
