@@ -142,10 +142,10 @@ function selectCoverage() {
     alert("Selecione uma cobertura antes de continuar.");
     return false;
   }
-  localStorage.setItem("cobertura", radio.value);
+  localStorage.setItem("id_cobertura", radio.value);
 }
 
-async function loadDocument(params) {
+async function loadDocument() {
   createSpinner();
   await getCoverageData();
   deleteSpinner();
