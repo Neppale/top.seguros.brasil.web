@@ -20,6 +20,12 @@ addEventListener("click", (e) => {
 });
 
 async function getModelo() {
+  const inputGroupSelect02 = document.getElementById("inputGroupSelect02");
+  inputGroupSelect02.innerHTML = "Modelo";
+
+  const inputGroupSelect03 = document.getElementById("inputGroupSelect03");
+  inputGroupSelect03.innerHTML = "Ano";
+
   const codigoMarca = $("#inputGroupSelect01").val();
   if (codigoMarca == "Marcas") return;
 
@@ -28,9 +34,6 @@ async function getModelo() {
   );
   const retornoModelo = await retornoModeloJSON.json();
 
-  const inputGroupSelect02 = document.getElementById("inputGroupSelect02");
-  inputGroupSelect02.innerHTML = "Modelo";
-
   for (var i = 0; i < retornoModelo.length; i++) {
     $("#inputGroupSelect02").append(
       `<option value='${retornoModelo[i].codigo}'>${retornoModelo[i].nome}</option>`
@@ -38,6 +41,9 @@ async function getModelo() {
   }
 }
 async function getAno() {
+  const inputGroupSelect03 = document.getElementById("inputGroupSelect03");
+  inputGroupSelect03.innerHTML = "Ano";
+
   const codigoMarca = $("#inputGroupSelect01").val();
   const codigoModelo = $("#inputGroupSelect02").val();
 
@@ -46,9 +52,6 @@ async function getAno() {
     `https://tsb-api-policy-engine.herokuapp.com/fipe/marcas/${codigoMarca}/modelos/${codigoModelo}/anos`
   );
   const retornoAno = await retornoAnoJSON.json();
-
-  const inputGroupSelect03 = document.getElementById("inputGroupSelect03");
-  inputGroupSelect03.innerHTML = "Ano";
 
   for (var i = 0; i < retornoAno.length; i++) {
     $("#inputGroupSelect03").append(
