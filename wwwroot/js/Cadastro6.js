@@ -150,3 +150,7 @@ async function loadDocument() {
   await getCoverageData();
   deleteSpinner();
 }
+
+
+
+
