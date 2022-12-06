@@ -2,21 +2,27 @@
 @{
     ViewData["Title"] = "UserPage";
 }
-
-<body onload="getUserData()">
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@ViewData["Title"] - TopSegurosBrasilWeb</title>
+  <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/css/DetalhesCobertura.css" asp-append-version="true" />
+</head>
+<body onload="loadDocument()">
     <div class="card">
 
-        <h1>Suas Coberturas</h1>
+        @* <h2>Suas coberturas</h2>
 
         <div class="card-body">
-            <h5 id="coverageTitle" class="card-title">Título do card</h5>
-            <p id="coverageDescription" class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
-            <p id="coverageStatus" class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-            <p id="coveragePrice" class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-        </div>
+            <h5 id="coverageTitle" class="card-title"></h5>
+            <p id="coverageDescription" class="card-text"></p>
+            <p id="coverageStatus" class="card-text"><small class="text-muted"></small></p>
+            <p id="coveragePrice" class="card-text"><small class="text-muted"></small></p>
+        </div> *@
 
     </div>
-
-
     <script src="~/js/UserPage.js" asp-append-version="true"></script>
 </body>

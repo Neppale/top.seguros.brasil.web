@@ -203,14 +203,14 @@ async function confirmPolicy() {
   const insertPolicyResponseJson = await insertPolicyResponse.json();
 
   if (insertPolicyResponseJson.message !== "Apólice criada com sucesso.") {
-    alert("Erro ao criar apólice. Tente novamente.");
+    alert(
+      insertPolicyResponseJson.message ||
+        "Erro ao criar apólice. Tente novamente mais tarde."
+    );
     return false;
   }
-  alert(
-    "Apólice criada com sucesso!\nRedirecionando para a página de login..."
-  );
   localStorage.clear();
-  window.location.href = "/";
+  window.location.href = "CadastroVII";
 }
 
 function createSpinner() {
