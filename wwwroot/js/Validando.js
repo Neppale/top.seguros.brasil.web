@@ -14,9 +14,15 @@
         }
     })
     var resposta = await retorno.json();
+    
     if (email == resposta.client.email) {
         localStorage.setItem('token', resposta.token);
         alert('Login realizado com sucesso!');
+        window.location.href = "Home/UserPage";
+
+        localStorage.setItem('id', resposta.client.id_cliente);
+
+        /*var userRespose = await fetch('https://tsb-api-policy-engine.herokuapp.com/cliente'),*/
 
     } else {
         alert('Dados incorretos');
