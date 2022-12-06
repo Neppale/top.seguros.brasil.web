@@ -1,22 +1,44 @@
-﻿
-@{
-    ViewData["Title"] = "UserPage";
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TopSegurosBrasilWeb</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/UserPage.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TopSegurosBrasilWeb.styles.css" asp-append-version="true" />
+</head>
 
-<body onload="getUserData()">
-    <div class="card">
+<body onload="getUserData()">   
 
-        <h1>Suas Coberturas</h1>
+    <div class="container">
+        <h5 class="title">Suas coberturas</h5>
+        <div class="card">
+            <div class="card-body cardBlue">
+                <div class="possante">
+                    <div class="img">
+                        <img src="~/img/Vector (5).png"/>
+                    </div>
+                    <div class="div">
+                    <h5 class="card-title h5">Atenção pro possante</h5>
+                    <p class="card-text p">Essencial + Menos dor de cabeça + Roubo/Furto do veículo</p>
+                    <p class="p">R$23,90</p>
+                    </div>
+                    <div class="img">
+                        <img src="~/img/seta.png" />
+                    </div>
+                </div>
 
-        <div class="card-body">
-            <h5 id="coverageTitle" class="card-title">Título do card</h5>
-            <p id="coverageDescription" class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
-            <p id="coverageStatus" class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-            <p id="coveragePrice" class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                <div class="status">
+                    <p class="pstatus"class>Em análise</p>
+                </div> 
+            </div>
         </div>
 
+        <div class="size">
+            <a class="cadastro-link"><button type="button" onclick="" class="btn input-group input-group-lg">+ ACIONAR SEGURO</button></a>
+        </div>
     </div>
-
-
     <script src="~/js/UserPage.js" asp-append-version="true"></script>
 </body>
