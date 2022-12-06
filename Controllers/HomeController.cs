@@ -75,6 +75,11 @@ namespace TopSegurosBrasilWeb.Controllers
         {
             return View();
         }
+        
+        public IActionResult UserPage()
+        {
+            return View();
+        }
 
         public IActionResult AcionarSeguroVI()
         {
