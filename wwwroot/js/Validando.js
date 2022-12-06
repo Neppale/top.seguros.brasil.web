@@ -17,6 +17,7 @@
     if (email == resposta.client.email) {
         localStorage.setItem('token', resposta.token);
         alert('Login realizado com sucesso!');
+        window.location.href = "AcionarSeguroI";
 
     } else {
         alert('Dados incorretos');
