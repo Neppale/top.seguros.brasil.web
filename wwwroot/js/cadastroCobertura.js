@@ -209,6 +209,7 @@ async function confirmPolicy() {
   alert(
     "Apólice criada com sucesso!\nRedirecionando para a página de login..."
   );
+  localStorage.clear();
   window.location.href = "/";
 }
 
