@@ -14,23 +14,19 @@
 
     <div class="container">
 
-        <div class="input-group mb-3">
-            <select class="form-select" id="inputGroupSelect01" onclick="getModelo()">
-                <option selected id="marca">Estado da ocorrência</option>
-            </select>
+        <div class="input-group input-group-lg size">
+            <input type="text" class="form-control inp" id="inputGroupSelect01" autocapitalize="off" placeholder="Estado da ocorrência" aria-label="Estado da ocorrência" aria-describedby="basic-addon1">
         </div>
 
-        <div class="input-group mb-3">
-            <select class="form-select" id="inputGroupSelect02">
-                <option selected id="modelo">Municipio</option>
-            </select>
+        <div class="input-group input-group-lg size">
+            <input type="text" class="form-control inp" id="inputGroupSelect02" autocapitalize="off" placeholder="Municipio" aria-label="Municipio" aria-describedby="basic-addon1">
         </div>
 
         <div class="size">
-            <a class="cadastro-link" asp-area="" asp-controller="Home" asp-action="AcionarSeguroIV"><button type="button" class="btn input-group input-group-lg">CONTINUAR</button></a>
+            <a class="cadastro-link" onclick="AcionarSeguro4()"><button type="button" class="btn input-group input-group-lg">CONTINUAR</button></a>
         </div>
 
     </div>
-    <script src="~/js/Cadastro4.js" asp-append-version="true"></script>
+    <script src="~/js/AcionarSeguroII.js" asp-append-version="true"></script>
 
 </body>
