@@ -256,9 +256,9 @@ async function getPolicyData() {
 
   const startPolicy = document.getElementById("startPolicy");
   startPolicy.addEventListener("click", () => {
-    localStorage.setItem("id_veiculo", policyData.id_veiculo);
-    localStorage.setItem("id_cliente", policyData.id_cliente);
-    // window.location.href = "/cobertura";
+    localStorage.setItem("id_veiculo", policyData.veiculo.id_veiculo);
+    localStorage.setItem("id_cliente", policyData.cliente.id_cliente);
+    window.location.href = "AcionarSeguroI";
   });
 
   const downloadButton = document.getElementById("downloadButton");
