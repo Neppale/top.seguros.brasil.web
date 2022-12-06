@@ -53,3 +53,7 @@ img{
     display: flex;
     flex-direction: row-reverse;
 }
+.containerImg{
+    width: 100px;
+    height: 100px;
+}

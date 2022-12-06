@@ -23,7 +23,6 @@
         localStorage.setItem('id', resposta.client.id_cliente);
 
         /*var userRespose = await fetch('https://tsb-api-policy-engine.herokuapp.com/cliente'),*/
-
     } else {
         alert('Dados incorretos');
     }
