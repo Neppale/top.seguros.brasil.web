@@ -132,7 +132,6 @@ async function postArquivoOcorrencia(file) {
       method: "POST",
       body: formData,
       headers: {
-        //'Content-Type': 'multipart/form-data; boundary=---011000010111000001101001',
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
     };
@@ -142,9 +141,6 @@ async function postArquivoOcorrencia(file) {
         id_ocorrencia,
       options
     );
+    window.location.href = "AcionarSeguroV";
   };
-
-  //   const teste = await sendFile.json();
-
-  window.location.href = "AcionarSeguroV";
 }
