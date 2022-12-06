@@ -46,6 +46,10 @@ namespace TopSegurosBrasilWeb.Controllers
         {
             return View();
         }
+        public IActionResult CadastroVII()
+        {
+            return View();
+        }
         public IActionResult CadastroCobertura()
         {
             return View();
@@ -72,6 +76,11 @@ namespace TopSegurosBrasilWeb.Controllers
         }
 
         public IActionResult AcionarSeguroV()
+        {
+            return View();
+        }
+        
+        public IActionResult UserPage()
         {
             return View();
         }
