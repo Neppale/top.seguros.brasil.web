@@ -65,7 +65,7 @@
 
     const p2 = document.createElement("p");
     p2.classList.add("p");
-    p2.innerText = element.premio;
+    p2.innerText = `R$ ${element.premio}`;
     div.appendChild(p2);
 
     const img2 = document.createElement("div");

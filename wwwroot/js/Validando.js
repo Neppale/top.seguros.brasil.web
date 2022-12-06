@@ -21,7 +21,7 @@
   if (email == resposta.client.email) {
     localStorage.setItem("token", resposta.token);
     alert("Login realizado com sucesso!");
-    window.location.href = "UserPage";
+    window.location.href = "/Home/UserPage";
 
     localStorage.setItem("id", resposta.client.id_cliente);
 
