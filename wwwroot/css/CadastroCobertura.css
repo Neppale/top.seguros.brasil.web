@@ -1,7 +1,44 @@
 ﻿.card{
     margin: auto;
+    border: none;
+    background-color: #FAFAFA !important;
 }
 
-.titleCar {
+.titleCar{
     background-color: #F45446;
+    font-size: 15px;
+    text-align: left;
+}
+.cor{
+    color: white;
+    background-color: #F45446;
+    font-size: 15px;
+    text-align: left;
+}
+img{
+    height: 90px;
+    width: 90px;
+    float: right;
+    background-color: #F45446;
+}
+p{
+    color: #a9a9a9;
+}
+span{
+    color: #00008B;
+}
+.card-body{
+    text-align: left;
+}
+.colorBlue{
+    color: #00008B;
+    font-size: 12px;
+}
+.btn {
+    background-color: #F45446 !important;
+    height: 56px;
+    color:#FAFAFA;
+}
+colorValue{
+    color: #0000FF;
 }

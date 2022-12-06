@@ -8,24 +8,35 @@
     <link rel="stylesheet" href="~/css/CadastroCobertura.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/TopSegurosBrasilWeb.styles.css" asp-append-version="true" />
 </head>
-<body>    
+<body onload="loadScript()">    
    
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 20rem;" >
         <div class="card-body titleCar">
-            <img src ="~/img/carrin.png"/>
+            <span class="cor">Chevrolet Celta</span>
+            <img  src ="~/img/carrin.png"  />
         </div>
+        <hr>
+        
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p>Cobertura escolhida</p>
+            <b><span id="">Atenção pro possante</span></b>
+            <p id="Descricao">Descrição.</p><br>
+            <p class="colorBlue">Cobertura total (100%) dos itens listados.</p>
         </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
+        <hr>
+        <div class="card-body monthlyValue">
+            <p>Valor Mensal</p>
+            <p class="colorValue" id="valorMensal">R$</p>
+        </div>
+        <hr>
+        <div class="card-body reimbursement">
+            <p>Reembolso</p>
+            <p class="colorValue" id="reembolso">R$</p><br>
+        </div>
+        
+        <div class="size">
+            <a class="cadastro-link" asp-area="" asp-controller="Home" asp-action=""></a><button type="button" class="btn input-group input-group-lg">CONFIRMAR E SOLICITAR SEGURO</button>
         </div>
     </div>
+    <script src="~/js/cadastroCobertura.js" asp-append-version="true"></script>
 </body>
