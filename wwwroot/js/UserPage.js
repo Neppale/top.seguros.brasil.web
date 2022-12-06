@@ -14,41 +14,93 @@
   const userJson = await rawUserData.json();
   const data = userJson.data;
 
-  // create following in body: //   <h2>Suas coberturas</h2>
-
   const body = document.querySelector("body");
-  const h2 = document.createElement("h2");
-  h2.innerText = "Suas coberturas";
-  body.appendChild(h2);
+  const h5 = document.createElement("h5");
+
+  const container = document.querySelector(".container");
+  h5.innerText = "Suas coberturas";
+  container.appendChild(h5);
 
   data.forEach((element) => {
+    const card = document.createElement("div");
+    card.classList.add("card");
+
+    const container = document.querySelector(".container");
+    container.appendChild(card);
+
     const cardBody = document.createElement("div");
     cardBody.classList.add("card-body");
-
-    const title = document.createElement("h5");
-    title.classList.add("card-title");
-    title.innerText = element.cobertura.nome;
-
-    const description = document.createElement("p");
-    description.classList.add("card-text");
-    description.innerText = element.cobertura.descricao;
-
-    const status = document.createElement("p");
-    status.classList.add("card-text");
-    status.innerText = element.status;
-
-    const price = document.createElement("p");
-    price.classList.add("card-text");
-    price.innerText = `R$${element.cobertura.valor}`;
-
-    cardBody.appendChild(title);
-    cardBody.appendChild(description);
-    cardBody.appendChild(status);
-    cardBody.appendChild(price);
-
-    const card = document.getElementsByClassName("card")[0];
+    cardBody.classList.add("cardBlue");
+    // on click, set localStorage.setItem("id_apolice", element.id_apolice) and redirect to DetalhesCobertura
+    cardBody.onclick = () => {
+      localStorage.setItem("id_apolice", element.id_apolice);
+      window.location.href = "DetalhesCobertura";
+    };
     card.appendChild(cardBody);
+
+    const possante = document.createElement("div");
+    possante.classList.add("possante");
+    cardBody.appendChild(possante);
+
+    const img = document.createElement("div");
+    img.src = "img/Vector (5).png";
+    img.classList.add("img");
+    possante.appendChild(img);
+
+    const div = document.createElement("div");
+    div.classList.add("div");
+    possante.appendChild(div);
+
+    const h5 = document.createElement("h5");
+    h5.classList.add("card-title");
+    h5.classList.add("h5");
+    h5.innerText = element.cobertura.nome;
+    div.appendChild(h5);
+
+    const p = document.createElement("p");
+    p.classList.add("card-text");
+    p.classList.add("p");
+    p.innerText = element.cobertura.descricao;
+    div.appendChild(p);
+
+    const p2 = document.createElement("p");
+    p2.classList.add("p");
+    p2.innerText = element.premio;
+    div.appendChild(p2);
+
+    const img2 = document.createElement("div");
+    img2.src = "img/seta.png";
+    img2.classList.add("img");
+    possante.appendChild(img2);
+
+    const status = document.createElement("div");
+    status.classList.add("status");
+    cardBody.appendChild(status);
+
+    const p3 = document.createElement("p");
+    p3.classList.add("pstatus");
+    p3.classList.add("class");
+    p3.innerText = element.status;
+    status.appendChild(p3);
   });
+
+  const size = document.createElement("div");
+  size.classList.add("size");
+  container.appendChild(size);
+
+  const cadastroButton = document.createElement("button");
+  cadastroButton.classList.add("btn");
+  cadastroButton.classList.add("input-group");
+  cadastroButton.classList.add("input-group-lg");
+  cadastroButton.innerText = "+ SOLICITAR SEGURO";
+  cadastroButton.onclick = () => {
+    window.location.href = "Cadastro";
+  };
+  size.appendChild(cadastroButton);
+
+  const cadastroLink = document.createElement("a");
+  cadastroLink.classList.add("cadastro-link");
+  size.appendChild(cadastroLink);
 }
 
 function createSpinner() {
