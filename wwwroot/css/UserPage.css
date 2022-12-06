@@ -1,0 +1,49 @@
+﻿.cardBlue, .possante,.div, .h5, .p, .img {
+    background-color: #003563 !important;
+    color: #ffffff;
+}
+
+.cardBlue{
+    margin: 0;
+    border-radius: 7px;
+}
+
+.title {
+    color: #003563;
+}
+.cardText, .p{
+    opacity: 40%;
+}
+
+
+.status {
+    background-color: #DB4639 !important;
+    border-radius: 8px;
+}
+
+.pstatus {
+    background-color: #DB4639 !important;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.possante {
+    display: flex !important;
+    flex-direction: row;
+    background-color: #003563 !important;
+    height: 160px;
+}
+
+.card{
+    margin: 30px 0;
+}
+
+img {
+    padding: 0 20px;
+    background-color: #003563 !important;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+}
