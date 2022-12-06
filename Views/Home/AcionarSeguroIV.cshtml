@@ -15,19 +15,19 @@
     <div class="container">
 
         <div class="input-group input-group-lg size">
-            <input type="text" class="form-control inp" id="" autocapitalize="off" placeholder="Local da ocorrência" aria-label="CPF" aria-describedby="basic-addon1">
+            <input type="text" class="form-control inp" id="localOcorrencia" autocapitalize="off" placeholder="Local da ocorrência" aria-label="CPF" aria-describedby="basic-addon1">
         </div>
 
         <div class="input-group input-group-lg size">
-            <input type="text" class="form-control inp" id="" autocapitalize="off" placeholder="Descrição da ocorrência" aria-label="CPF" aria-describedby="basic-addon1" >
+            <input type="text" class="form-control inp" id="descOcorrencia" autocapitalize="off" placeholder="Descrição da ocorrência" aria-label="CPF" aria-describedby="basic-addon1" >
         </div>
 
         <div class="size">
-            <a class="cadastroII" asp-area="" asp-controller="Home" asp-action="AcionarSeguroV"><button type="button" class="btn input-group input-group-lg">Continuar</button></a>
+            <a class="cadastroII" onclick="AcionarSeguro5()"><button type="button" class="btn input-group input-group-lg">Continuar</button></a>
         </div>
 
     </div>
 
-    
+    <script src="~/js/AcionarSeguroII.js" asp-append-version="true"></script>
 
 </body>
